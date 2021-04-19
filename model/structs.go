@@ -11,6 +11,7 @@ type Config struct {
 	Oauth struct {
 		ClientId     string
 		ClientSecret string
+		DirectoryId  string
 		Scope        string
 		Redirecturi  string
 	}
