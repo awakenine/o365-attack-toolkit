@@ -66,6 +66,7 @@ internalport = 8080
 [oauth]
 clientid = [REDACTED]
 clientsecret = [REDACTED]
+directoryid = [REDACTED]
 scope = "offline_access contacts.read user.read mail.read mail.send files.readWrite.all files.read files.read.all openid profile"
 redirecturi = "http://localhost:30662/gettoken"
 ```
