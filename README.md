@@ -53,6 +53,20 @@ dep ensure
 go build
 ```
 
+### Docker
+
+Edit `host` from 127.0.0.1 to 0.0.0.0 for running in container.
+
+Build:
+```
+docker build -t o365-attack-toolkit .
+```
+
+Run example:
+```
+sudo docker run -it --rm -p 8080:8080 -p 30662:30662 -v "$PWD/template.conf":/go/src/o365-attack-toolkit/template.conf --name o365-attack-toolkit-app o365-attack-toolkit
+```
+
 ### Configuration
 
 An example configuration as below :
