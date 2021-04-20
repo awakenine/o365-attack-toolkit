@@ -64,7 +64,7 @@ docker build -t o365-attack-toolkit .
 
 Run example:
 ```
-sudo docker run -it --rm -p 8080:8080 -p 30662:30662 -v "$PWD/template.conf":/go/src/o365-attack-toolkit/template.conf --name o365-attack-toolkit-app o365-attack-toolkit
+sudo docker run -it --rm -p 127.0.0.1:8080:8080 -p 127.0.0.1:30662:30662 -v "$PWD/template.conf":/go/src/o365-attack-toolkit/template.conf --name o365-attack-toolkit-app o365-attack-toolkit
 ```
 
 ### Configuration
